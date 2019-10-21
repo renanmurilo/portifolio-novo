@@ -19,6 +19,7 @@
     "popper.js": "^1.15.0"
   },
   "dependencies": {
-    "gulp-autoprefixer": "^7.0.1"
+    "gulp-autoprefixer": "^7.0.1",
+    "typed.js": "^2.0.11"
   }
 }

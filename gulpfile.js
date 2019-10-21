@@ -24,6 +24,7 @@ gulp.task("js", function() {
       "node_modules/jquery/dist/jquery.min.js",
       "node_modules/popper.js/dist/umd/popper.min.js",
       "node_modules/slick-carousel/slick/slick.min.js",
+      "node_modules/typed.js/lib/typed.min.js"
     ])
     .pipe(gulp.dest("src/assets/js"))
     .pipe(browserSync.stream());

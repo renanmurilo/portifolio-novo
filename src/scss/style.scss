@@ -12,15 +12,18 @@ header{
     top: 0;
     left: 0;
     z-index: 1;
+    
     .navbar-expand-lg .navbar-collapse{
         justify-content: flex-end;
     }
     
     .navbar{
         font-size: 1.25rem;
+        background-color: #181818;
+
 
         .navbar-toggler{
-            border: 1px solid aqua;
+            
     
             .navbar-toggler-icon{
                 display: block;
@@ -30,6 +33,26 @@ header{
                 margin: 6px 0;
             }
         }
+
+        .midias{
+            display: flex;
+            align-items: center;
+
+            .fa-linkedin-in{
+                size: 4rem;
+            }
+           
+           a{
+               margin: 0 .5rem;
+                i{
+                    color: #4d4d4e;
+
+                    &:hover{
+                        color: aqua;
+                    }
+                }
+           }
+        }
         
 
        .navbar-nav{
@@ -37,13 +60,13 @@ header{
 
             .nav-link{
                 position: relative;
-                color: aqua;
+                color: #4d4d4e;
                 padding: .5rem 2rem;
-            }
-            a:hover{
-                border-bottom: 1px solid aqua;
-                transition: all .2s linear;
-                
+
+                &:hover{
+                    transition: all .2s linear;
+                    color: aqua;
+                }
             }
        }
     }

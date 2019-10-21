@@ -32,7 +32,7 @@ gulp.task("js", function() {
 // Compilar o Sass
 gulp.task("sass", function() {
   return gulp
-    .src(["node_modules/bootstrap/scss/bootstrap.scss", "node_modules/slick-carousel/slick/slick.css", "node_modules/slick-carousel/slick/slick-theme.css", "src/scss/*.scss"])
+    .src(["node_modules/bootstrap/scss/bootstrap.scss", "node_modules/slick-carousel/slick/slick.css", "node_modules/slick-carousel/slick/slick-theme.css", "node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css", "node_modules/@fortawesome/fontawesome-free/css/all.min.css", "src/scss/*.scss"])
     .pipe(sass({ outputStyle: "compressed" }).on("error", sass.logError))
     .pipe(autoprefixer({browsers: ['last 2 versions'],cascade: false}))
     .pipe(gulp.dest("src/assets/css"))

@@ -424,7 +424,6 @@ header{
                         background-color: #4d4d4e;
                         border-radius: 0;
                         border: none;
-                        width: 100%;
                         border-bottom: 1px solid #4d4d4e;
                         transition: all 0.3s cubic-bezier(.64,.09,.08,1);
                         background-position: -200px 0;
@@ -432,7 +431,7 @@ header{
                         background-repeat: no-repeat;
                         color: #fff;
 
-                        &:focus, :valid{
+                        &:focus, &:valid{
                             border-bottom: solid 2px aqua;
                             background-color: #4d4d4e;
                             box-shadow: none;

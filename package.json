@@ -20,6 +20,7 @@
   },
   "dependencies": {
     "gulp-autoprefixer": "^7.0.1",
+    "slick-carousel": "^1.8.1",
     "typed.js": "^2.0.11"
   }
 }

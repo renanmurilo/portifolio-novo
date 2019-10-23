@@ -4,6 +4,9 @@ body{
     background-color: #242626;
     font-family: 'Roboto', sans-serif;
 }
+hr{
+    background-color: #4d4d4e;
+}
 
 header{
     position: absolute;
@@ -21,7 +24,7 @@ header{
     .navbar{
         font-size: 1.25rem;
         background-color: #181818;
-
+        padding: 1rem 0;
 
         .navbar-toggler{
             
@@ -38,6 +41,10 @@ header{
         .midias{
             display: flex;
             align-items: center;
+            
+            .fab{
+                font-size: 25px;
+            }
            
            a{
                margin: 0 .5rem;
@@ -46,6 +53,7 @@ header{
 
                     &:hover{
                         color: aqua;
+                        transition: all .3s linear;
                     }
                 }
            }
@@ -58,11 +66,12 @@ header{
                 position: relative;
                 color: #4d4d4e;
                 margin: 0 2rem;
-
+                
                 &:hover{
-                    transition: all .2s linear;
-                    color: aqua;
+                    transition: all .3s linear;
+                    color: aqua;               
                 }
+                
             }
        }
     }
@@ -126,8 +135,8 @@ header{
             border-radius: none;
             background-color: transparent;
             text-decoration: none;
-            padding: .5rem 0.75rem; 
-            font-size: 0.6875rem;
+            padding: .7rem 1rem; 
+            font-size: 0.875rem;
             text-transform: uppercase;
             letter-spacing: 4px;
             border-radius: 3px;
@@ -365,6 +374,7 @@ header{
 #contato{
     display: flex;
     width: 100%;
+    margin-bottom: 5rem;
 
     h2{
         color: #fff;
@@ -382,7 +392,7 @@ header{
             margin-top: 5rem;
     
             p{
-                font-size: 1rem;
+                font-size: 1.375rem;
                 color: #fff;
                 cursor: pointer;
     
@@ -398,29 +408,41 @@ header{
         }
 
         .form-contato{
-
+            margin-top: 2.5rem;
             form{
 
                 .form-group{
-                    
+                    margin-bottom: 0;
+
                     label{
                         color: #fff;
                         margin-top: .5rem;
                         margin-bottom: 0;
                     }
-
+                
                     input, textarea{
                         background-color: #4d4d4e;
-                        border-top: none;
-                        border-left: none;
-                        border-right: none;
-                        border-bottom: 2px solid aqua;
                         border-radius: 0;
+                        border: none;
+                        width: 100%;
+                        border-bottom: 1px solid #4d4d4e;
+                        transition: all 0.3s cubic-bezier(.64,.09,.08,1);
+                        background-position: -200px 0;
+                        background-size: 200px 100%;
+                        background-repeat: no-repeat;
                         color: #fff;
+
+                        &:focus, :valid{
+                            border-bottom: solid 2px aqua;
+                            background-color: #4d4d4e;
+                            box-shadow: none;
+                        }
 
                         &::placeholder{
                             color: #fff;
                             font-style: italic;
+                            visibility: visible !important;
+                            font-size: 0.75rem;
                         }
                     }
                 }
@@ -437,10 +459,26 @@ header{
 
                     &:hover{
                         background-color: aqua;
+                        transition: all .3s linear;
                         color: #4d4d4e;
                     }
                 }
             }
+        }
+    }
+}
+
+footer{
+    background-color: #181818;
+    width: 100%;
+    .text-footer{
+        display: flex;
+        justify-content: flex-start;
+        margin: 1.2rem 0 .5rem 1rem;
+
+        p{
+            font-size: 0.875rem;
+            color: #fff;
         }
     }
 }

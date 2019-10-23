@@ -36,16 +36,16 @@
                 <div class="collapse navbar-collapse" id="textoNavbar">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#home">Home</a>
+                            <a class="nav-link rolagem" href="#home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#skills">Skills</a>
+                            <a class="nav-link rolagem" href="#skills">Skills</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Portifólio</a>
+                            <a class="nav-link rolagem" href="#projetos">Projetos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#contato">Contato</a>
+                            <a class="nav-link rolagem" href="#contato">Contato</a>
                         </li>
                     </ul>
                 </div>
@@ -59,7 +59,7 @@
                 <div class="col-md-12">
                     <div class="title-home">
                         <h1 id="typed"></h1>
-                        <a href="#contato">
+                        <a href="#contato" class="rolagem">
                             <button type="button" class="btn-aqua">Fale comigo</button>
                         </a>
                     </div>
@@ -212,11 +212,8 @@
                     <div class="session-contato">
                         <div class="col-md-6">
                             <div class="text-contato">
-                                <p><i class="fas fa-envelope"></i> <a href="mailto:renanmurilosantosg@gmail.com"
-                                        target="_blank">renanmurilosantosg@gmail.com</a></p>
-                                <p><i class="fab fa-whatsapp"></i> <a
-                                        href="https://api.whatsapp.com/send?phone=5511979552650" target="_blank">(11)
-                                        97955-2650</a></p>
+                                <p><i class="fas fa-envelope"></i> <a href="mailto:renanmurilosantosg@gmail.com" target="_blank">renanmurilosantosg@gmail.com</a></p>
+                                <p><i class="fab fa-whatsapp"></i> <a href="https://api.whatsapp.com/send?phone=5511979552650" target="_blank">(11) 97955-2650</a></p>
                             </div>
                         </div>
     
@@ -225,13 +222,19 @@
                                 <form action="">
                                     <div class="form-group">
                                         <label>Nome :</label>
-                                        <input type="text" class="form-control" placeholder="Nome completo">
+                                        <input type="text" class="form-control" placeholder="Nome completo" autocomplete="off" required>
+                                    </div>
+                                    <div class="form-group">
                                         <label>Endereço de email :</label>
-                                        <input type="email" class="form-control" placeholder="Seu email">
+                                        <input type="email" class="form-control" placeholder="Seu email" autocomplete="off" required>
+                                    </div>
+                                    <div class="form-group">
                                         <label>Assunto :</label>
-                                        <input type="text" class="form-control" placeholder="Assunto">
+                                        <input type="text" class="form-control" placeholder="Assunto" autocomplete="off" required>
+                                    </div>
+                                    <div class="form-group">
                                         <label>Mensagem :</label>
-                                        <textarea class="form-control" rows="5"></textarea>
+                                        <textarea class="form-control" rows="5" required></textarea>
                                     </div>
                                     <button type="submit" class="btn btn-enviar">Enviar</button>
                                 </form>
@@ -242,6 +245,18 @@
             </div>
         </div>
     </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="text-footer">
+                        <p>© Todos os direitos reservados</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
     <script src="src/assets/js/jquery.min.js"></script>

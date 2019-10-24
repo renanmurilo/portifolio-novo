@@ -16,7 +16,7 @@ $(".rolagem").click(function() {
     });
 });
 
-$(document).ready(function(){
+$(function(){
     $('.carrossel-tipbar').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -32,6 +32,6 @@ $(document).ready(function(){
         ]
     });
     $(window).on('resize', function () {
-        $('.destinos').slick('resize');
+        $('.session-projetos').slick('resize');
     });
-});
+})
